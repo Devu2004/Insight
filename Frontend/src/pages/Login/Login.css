@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.mainLoginContainer {
+  color: #001e1d;
+  background-color: #004643;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.mainLoginContainer .LoginFormContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainLoginContainer .LoginFormContainer form {
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #e8e4e6;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  max-width: 450px;
+}
+.mainLoginContainer .LoginFormContainer form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.mainLoginContainer .LoginFormContainer form input {
+  background: transparent;
+  color: #001e1d;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 1px solid #001e1d;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+}
+.mainLoginContainer .LoginFormContainer form input::-moz-placeholder {
+  color: rgba(0, 30, 29, 0.7);
+  font-style: italic;
+}
+.mainLoginContainer .LoginFormContainer form input::placeholder {
+  color: rgba(0, 30, 29, 0.7);
+  font-style: italic;
+}
+.mainLoginContainer .LoginFormContainer form input:focus {
+  transform: scale(1.02);
+}
+.mainLoginContainer .LoginFormContainer form button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  background-color: #001e1d;
+  color: #fff;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mainLoginContainer .LoginFormContainer form button:hover {
+  background-color: #0f3433;
+  transform: translateY(-2px);
+}
+.mainLoginContainer .LoginFormContainer form button:active {
+  transform: scale(0.95);
+}
+.mainLoginContainer .LoginFormContainer form .mainContainerOfLoginReferal {
+  margin-top: 0.8rem;
+  text-align: right;
+}
+.mainLoginContainer .LoginFormContainer form .mainContainerOfLoginReferal .loginreferal {
+  text-decoration: none;
+  color: #001e1d;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.mainLoginContainer .LoginFormContainer form .mainContainerOfLoginReferal .loginreferal:hover {
+  color: black;
+}
+.mainLoginContainer .LoginFormContainer form span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: crimson;
+  margin-top: 0.3rem;
+}
+.mainLoginContainer .LoginFormContainer .existing-user {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #e8e4e6;
+}
+.mainLoginContainer .LoginFormContainer .existing-user .loginreferal {
+  color: #e8e4e6;
+  margin-left: 0.4rem;
+  text-decoration: none;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+.mainLoginContainer .LoginFormContainer .existing-user .loginreferal:hover {
+  color: rgb(196.81, 186.69, 191.75);
+}
+.mainLoginContainer .loginButtonHolder {
+  width: 80px;
+  background-color: #e8e4e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainLoginContainer .loginButtonHolder .social-login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.mainLoginContainer .loginButtonHolder .social-login-content .login-vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #001e1d;
+}
+.mainLoginContainer .loginButtonHolder .social-login-content .icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.mainLoginContainer .loginButtonHolder .social-login-content .icon-list svg {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+.mainLoginContainer .loginButtonHolder .social-login-content .icon-list svg:hover {
+  transform: scale(1.2);
+  color: #F49BAB;
+}
+
+/* 📱 Breakpoints */
+@media (max-width: 1024px) {
+  .mainLoginContainer {
+    flex-direction: column;
+  }
+  .mainLoginContainer .loginButtonHolder {
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+  }
+  .mainLoginContainer .loginButtonHolder .social-login-content {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .mainLoginContainer .loginButtonHolder .social-login-content .login-vertical-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+  .mainLoginContainer .loginButtonHolder .social-login-content .icon-list {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .mainLoginContainer .LoginFormContainer form {
+    padding: 1.5rem;
+    max-width: 380px;
+  }
+  .mainLoginContainer .LoginFormContainer form input {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .mainLoginContainer .LoginFormContainer form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .mainLoginContainer .LoginFormContainer form .mainContainerOfLoginReferal .loginreferal {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+  .mainLoginContainer .LoginFormContainer form {
+    max-width: 95%;
+    padding: 1rem;
+  }
+  .mainLoginContainer .loginButtonHolder {
+    height: 60px;
+  }
+  .mainLoginContainer .loginButtonHolder .social-login-content .icon-list svg {
+    font-size: 1.4rem;
+  }
+  .mainLoginContainer .LoginFormContainer .existing-user {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=Login.css.map */

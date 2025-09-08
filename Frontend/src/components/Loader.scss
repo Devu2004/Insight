@@ -1,0 +1,47 @@
+$color-bg: #f9fafb;
+@mixin respond($breakpoint){
+    @if $breakpoint == small {
+        @media (max-width: 480px){ @content; }
+    }
+    @else if $breakpoint == medium {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == large {
+        @media (max-width: 1024px){
+            @content;
+        }
+    }
+}
+.mainLoaderContainer {
+  background-color: $color-bg;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .insidecontainer {
+    p {
+      font-size: 10rem;
+      text-align: center;
+      font-weight: bolder;
+      color: #111827;
+
+      
+      @include respond(large) {
+        font-size: 6rem;
+      }
+
+      @include respond(medium) {
+        font-size: 4rem;
+      }
+
+      @include respond(small) {
+        font-size: 2.5rem;
+      }
+
+    }
+  }
+}
