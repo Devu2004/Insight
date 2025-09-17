@@ -1,0 +1,129 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #004643;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+.wrapper .mainScreenOfPage {
+  flex: 1;
+  border-radius: 0.5rem;
+  background-color: #e8e4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.wrapper .mainScreenOfPage .mainScreenContent {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wrapper .mainScreenOfPage .mainScreenContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #001e1d;
+  line-height: 0.8;
+}
+.wrapper .mainScreenOfPage .mainScreenContent h2 span {
+  color: #004643;
+  font-size: 1rem;
+  font-weight: 600;
+  word-spacing: 1.5px;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume {
+  background-color: white;
+  border: 1.8px dashed #004643;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume:hover {
+  background-color: rgb(243.73, 241.77, 242.75);
+  border-color: rgb(0, 19, 18.1857142857);
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.5);
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .plus {
+  font-size: 2.5rem;
+  color: #004643;
+  font-weight: 700;
+  text-align: center;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .text {
+  text-align: left;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .text .title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #001e1d;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .text .file-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #004643;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .text .hint {
+  font-size: 0.7rem;
+  color: gray;
+  font-weight: 500;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .browse-btn {
+  background-color: #001e1d;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+.wrapper .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .browse-btn:hover {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .mainScreenOfPage .mainScreenContent {
+    gap: 1.5rem;
+  }
+  .mainScreenOfPage .mainScreenContent h2 {
+    font-size: 1.5rem;
+  }
+  .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 1rem;
+  }
+  .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .left .text {
+    text-align: center;
+  }
+  .mainScreenOfPage .mainScreenContent .uploadResume .upload-resume .browse-btn {
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Dashboard.css.map */

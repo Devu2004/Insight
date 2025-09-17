@@ -1,0 +1,169 @@
+.mainConatinerOfNav {
+  background-color: #e8e4e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #001e1d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.mainConatinerOfNav .logoSide {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-family: "Segoe UI", sans-serif;
+  color: #004643;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.mainConatinerOfNav .logoSide:hover {
+  transform: scale(1.05);
+}
+.mainConatinerOfNav .contentSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+.mainConatinerOfNav .contentSide .templates {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #001e1d;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.mainConatinerOfNav .contentSide .templates:hover {
+  color: #004643;
+}
+.mainConatinerOfNav .contentSide .templates::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #004643;
+  transition: width 0.3s ease;
+}
+.mainConatinerOfNav .contentSide .templates:hover::after {
+  width: 100%;
+}
+.mainConatinerOfNav .contentSide button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #001e1d;
+  color: #e8e4e6;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mainConatinerOfNav .contentSide button:hover {
+  background-color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.mainConatinerOfNav .contentSide button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.profile-icon {
+  position: fixed;
+  top: 6rem;
+  right: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #001e1d;
+  z-index: 2000;
+  transition: all 0.3s ease;
+}
+.profile-icon:hover {
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.profile-icon:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .mainConatinerOfNav {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .mainConatinerOfNav .contentSide {
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .mainConatinerOfNav .contentSide button {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+  .profile-icon {
+    font-size: 1.6rem;
+    top: 7rem;
+    right: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .profile-icon {
+    font-size: 1.4rem;
+    top: 7rem;
+    right: 2rem;
+  }
+}
+.resume-fixed {
+  position: fixed;
+  top: 6.25rem;
+  right: 6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #001e1d;
+  z-index: 2000;
+  transition: color 0.3s ease;
+}
+.resume-fixed:hover {
+  color: #004643;
+}
+.resume-fixed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #004643;
+  transition: width 0.3s ease;
+}
+.resume-fixed:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .resume-fixed {
+    font-size: 1rem;
+    top: 7.2rem;
+    right: 4.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .resume-fixed {
+    font-size: 0.9rem;
+    top: 7.2rem;
+    right: 4.5rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

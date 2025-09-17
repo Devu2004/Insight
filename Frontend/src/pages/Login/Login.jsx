@@ -54,7 +54,7 @@ const Login = () => {
         </form>
         <p className='existing-user'>
           Don't have an account?{""}
-          <Link to='/' className='loginreferal'>
+          <Link to='/signup' className='loginreferal'>
           Sign Up
           </Link>
         </p>

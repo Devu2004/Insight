@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import Loader from "./components/Loader";
+import Loader from "./components/Loader/Loader";
 import MainRoutes from "./routes/MainRoutes";
 import { gsap } from "gsap";
 

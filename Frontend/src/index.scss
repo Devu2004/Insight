@@ -3,13 +3,7 @@
 
 $font-heading: 'Poppins', sans-serif;
 $font-body: 'Roboto', sans-serif;
-
-$color-bg: #f9fafb;
-$color-primary: #2563EB;
-$color-secondary: #9333EA;
-$color-accent: #FACC15;
-$color-text: #111827;
-$color-text-light: #6B7280;
+$main-bg: #004643; 
 *{
   margin: 0;
   padding: 0;
@@ -21,8 +15,7 @@ html,body{
 }
 body {
   font-family: $font-body;
-  background: $color-bg;
-  color: $color-text;
+  background-color: $main-bg;
 }
 
 h1, h2, h3, h4, h5 {

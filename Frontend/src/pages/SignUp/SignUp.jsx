@@ -29,6 +29,8 @@ const SignUp = () => {
     const isSuccess = true; // Replace with  API response
 
     if (isSuccess) {
+      // local storage for testing 
+      localStorage.setItem("user", JSON.stringify(userData));
       toast.success("Sign up successful! Welcome.");
       reset(); 
     } else {
@@ -73,7 +75,7 @@ const SignUp = () => {
     </form>
 
     <p className="existing-user">
-  Already a user?<Link to="/login" className='loginReferal'>Click here</Link>
+  Already a user?<Link to="/" className='loginReferal'>Click here</Link>
 </p>
 </div>
 <div className='buttonHolder'>
